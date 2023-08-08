@@ -1,0 +1,99 @@
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	padding: 0;
+	color: black;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+header {
+	padding: 20px;
+	text-align: center;
+	background: rgb(60, 180, 58);
+	background: linear-gradient(
+		90deg,
+		rgba(60, 180, 58, 1) 0%,
+		rgba(255, 255, 255, 1) 50%,
+		rgba(252, 69, 69, 1) 100%
+	);
+}
+
+h1 {
+	margin: 0;
+	text-shadow: 2px 2px 4px black;
+}
+
+img {
+	width: 300px;
+	height: auto;
+	border-radius: 25px;
+}
+
+/* nawigacja */
+nav {
+	position: sticky;
+	top: 0;
+	height: 60px;
+	line-height: 60px;
+	background-color: rgba(0, 0, 0, 0.692);
+	text-align: right;
+	z-index: 10;
+}
+
+.nav-items a {
+	padding: 0 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+	transition: color 0.3s;
+}
+
+.nav-items button {
+	background: none;
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	border: none;
+	cursor: pointer;
+}
+
+.nav-items a:hover {
+	color: rgb(24, 174, 13);
+}
+
+section {
+	padding-left: 30px;
+	border: 1px solid black;
+}
+
+body.dark-mode {
+	background-color: rgba(30, 24, 24, 0.847);
+	color: #fefefe;
+}
+
+
+footer {
+    padding: 10px 10px;
+    text-align: center;
+    background-color: #1c1b1bef;
+	color: #fff;
+}
+
+.instr {
+	font-weight: bold;
+}
+
+@media screen and (max-width: 857px) {
+	nav {
+		display: none;
+	}
+
+	section {
+		padding-left: 10px;
+	}
+}
